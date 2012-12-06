@@ -1,0 +1,472 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+					
+					
+						
+							<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+							<title>Employee Profile Page</title>
+							<!-- <link rel="stylesheet" href="/_private/global2.css" type="text/css"> -->
+							<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="raviprak_files/reset-fonts-grids.css">		
+	<link rel="stylesheet" type="text/css" href="raviprak_files/header_brown_white.css"><link rel="stylesheet" type="text/css" href="raviprak_files/footer_light.css">
+					<link rel="stylesheet" href="raviprak_files/backyard_profile.css" type="text/css"><style type="text/css" media="all"></style>
+<script type="text/javascript" src="raviprak_files/header.js"></script>
+<script src="raviprak_files/fpc.js" type="text/javascript" defer="defer"></script></head><body><div style="z-index: 2; width: 200px; visibility: hidden;" class="yui-module yui-overlay yui-tt yui-overlay-hidden" id="bravoimg0"><div class="bd"></div></div><iframe style="position: absolute; visibility: visible; background-color: transparent; border-width: 0pt; width: 2em; height: 2em; left: 0pt; top: -27px;" title="Text Resize Monitor" id="_yuiResizeMonitor"></iframe><div style="z-index: 2; width: 200px; visibility: hidden;" class="yui-module yui-overlay yui-tt yui-overlay-hidden" id="bravoimg0"><div class="bd"></div></div>
+
+<!-- START: header -->
+<div id="header-wrapper">
+	<h1 class="hidden">Backyard Header</h1>
+	<div id="top-menu">
+		<div id="top-inner">
+			<div id="top-left">
+				<div id="signin"><a href="https://bouncer.by.corp.yahoo.com/login/index.html?done=http%3A%2F%2Fbackyard.yahoo.com%2Ftools%2Fg%2Femployee%2Fprofile%3Fuser_id%3Draviprak" class="first by-font" title="signin">Sign In</a></div>
+				<div id="techyard"><a href="http://techyard.corp.yahoo.com/" class="by-font" title="Techyard">Techyard</a></div>
+				<div id="yahoo"><a href="http://www.yahoo.com/" class="by-font" title="Yahoo!">Yahoo!</a></div>
+				<div id="stock"><a href="http://finance.yahoo.com/q?s=yhoo" class="by-font" title="(Delayed 20mins)">YHOO $16.08</a></div>
+			</div>
+			<h2 class="hidden">Search box</h2>
+			<div id="top-right">
+				<form id="by-search" name="by-search" method="GET" action="http://search.corp.yahoo.com/q.php" onsubmit="return SBX.submitSearch();">
+					<input name="site" value="" type="hidden">
+					<div id="type-wrap">
+						<a href="javascript:void(0);" id="menu-trigger" onclick="SBX.toggleSearchTypeMenu();">
+							<small id="img-type" class="imgtype_all"></small>
+						</a>
+						<div id="tt2" class="display-off">
+						<small></small>
+							<div class="menu-bd">
+                                                                <fieldset class="menu-content">
+                                                                        <legend><span class="hidden">Search Type</span></legend>
+                                                                        <span class="hidden">Choose a search type from the items below</span>
+                                                                        <input name="search" id="search_all" value="all" onclick="SBX.searchType('all');" checked="checked" type="radio">
+                                                                        <label style="font-weight: bold;" for="search_all" id="lbl_all" class="first">All</label>
+                                                                        <input name="search" id="search_employee" value="employee" onclick="SBX.searchType('employee');" type="radio">
+                                                                        <label for="search_employee" id="lbl_employee">Yahoos</label>
+                                                                        <input name="search" id="search_room" value="room" onclick="SBX.searchType('room');" type="radio">
+                                                                        <label for="search_room" id="lbl_room">Rooms</label>
+                                                                        <input name="search" id="search_site" value="site" onclick="SBX.searchType('site');" type="radio">
+                                                                        <label for="search_site" id="lbl_site">Sites</label>
+                                                                </fieldset>
+                                                        </div>
+	
+						</div>
+				</div>
+				<div id="query-wrap">
+					<input class="query_all" id="query" name="query" onfocus="SBX.searchboxFocused();" onkeyup="SBX.searchboxTyped();" onkeydown="SBX.searchboxTyped();" size="38" autocomplete="off" type="text">
+				</div>
+				<div id="btn-wrap">
+					<input id="searchbtn" src="raviprak_files/shim.gif" alt="Search" height="25" width="29" type="image" align="absmiddle" border="0">
+				</div>
+				</form>
+			</div>
+		</div>
+	</div>
+        <div id="logo">
+                <div id="left"></div>
+                <div id="right"></div>
+                <div id="content">
+                        <a href="http://backyard.yahoo.com/maple/home"><div id="center"></div></a>
+                </div>
+        </div>
+        <div id="sub-menu">
+                <div id="sub-inner">
+                        <ul>
+                                <li><a href="http://backyard.yahoo.com/maple/home" class="by-font ">Home</a></li>
+                                <li>
+					<a onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" href="http://backyard.yahoo.com/our_company" class="by-font">Our Company</a>
+					<div onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" class="nav_flyout our_company_flyout">
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/our_company/executive_team">Executive Team</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/tools/g/priorities">Company Priorities</a>
+                                                <!-- <a class='by-font nav-small' href="/our_company/financials">Financials</a> -->
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/our_company/technology_products_properties/">Technology,<br>Products &amp; Properties</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/our_company/fun_facts">Fun Facts</a>
+                                                <a class="by-font nav-small" href="http://companystore.yahoo.com/">Yahoo!<br>Company Store</a>
+                                        </div>
+				</li>
+                                <li>
+					<a onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" href="http://backyard.yahoo.com/work_at_yahoo" class="by-font">Working @ Y!</a>
+					<div onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" class="nav_flyout work_at_yahoo_flyout">
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/learn/newhires/">Getting Started<br>as a Yahoo</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/tools/o/sso/benefits.php">U.S. Benefits Center</a>
+                                                <a class="by-font nav-small" href="http://managercentral.corp.yahoo.com/maple/index">Manager Central</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/learn/">Learning &amp; Development</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/resources/humans/euhr/index.php">EMEA</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/resources/humans/apac/">APAC</a>
+                                        </div>
+				</li>
+                                <li>
+					<a onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" href="http://backyard.yahoo.com/our_community" class="by-font">Our Community</a>
+					<div onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" class="nav_flyout our_community_flyout">
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/yef">Yahoo!<br>Employee Foundation</a>
+                                                <a class="by-font nav-small" href="http://forgood.yahoo.com/index.html">Yahoo! For Good</a>
+                                                <a class="by-font nav-small" href="http://twiki.corp.yahoo.com/view/YFG/GreenTeam">Yahoo! Green Team</a>
+                                                <a class="by-font nav-small" href="http://eventcentral.corp.yahoo.com/">Event Central</a>
+                                        </div>
+
+
+				</li>
+                                <li>
+					<a onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" href="http://backyard.yahoo.com/tools_supports" class="by-font">Tools and Support</a>
+					<div onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" class="nav_flyout tools_supports_flyout">
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/resources/isnet">IT Support</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/resources/facilities/REW/index.php">Real Estate &amp; Workplace</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/tools_supports/tools/">Tools</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/tools_supports/forms/">Forms</a>
+                                        </div>
+				</li>
+                                <li>
+					<a onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" href="http://backyard.yahoo.com/departments" class="by-font">Departments</a>
+				</li>
+                                <li>
+					<a onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" href="http://backyard.yahoo.com/tools/g/news/landing.php" class="by-font">All News</a>
+					<div onmouseover="navBarHover(this);" onmouseout="navBarOut(this);" class="nav_flyout all_news_flyout">
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=178">Featured News</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=181">Product News</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=205">Regions News</a>
+                                                <a class="by-font nav-small" href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=182">Local News</a>
+						<a class="by-font nav-small" href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=227">Awards &amp; Honors</a>
+                                        </div>
+				</li>
+                        </ul>
+                </div>
+        </div>
+</div>
+
+
+
+<!-- END: header -->
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="raviprak_files/container.css">
+ 
+<!-- Dependencies -->
+<script src="raviprak_files/yahoo-dom-event.js"></script>
+ 
+<!-- OPTIONAL: Animation (only required if using ContainerEffect) -->
+<script src="raviprak_files/animation-min.js"></script>
+ 
+<!-- Source file -->
+<script src="raviprak_files/container-min.js"></script>
+ 
+
+<div id="doc2">
+	<div id="bd">
+		<div class="yui-g">
+			<div class="header floatmask">
+				<h1 style="visibility: hidden; display: none; line-height: 0pt;">Backyard Profile</h1>
+				<img src="raviprak_files/backyard_profile.png" alt="Backyard Profile" height="58" width="210" border="0">
+			</div>
+			<div class="wrapper floatmask">
+				<div class="floatmask">
+					<div class="yui-u first">
+						<div class="left floatmask">
+							<!-- START: profile -->
+							<div class="profile floatmask">
+								<div class="type"></div>
+								<div class="picture">
+								<a href="http://backyard.yahoo.com/isweb-icons/staff/raviprak.jpg"><img class="thumbnail" src="raviprak_files/image.jpeg" alt="Ravi Prakash" border="0"></a>
+								  
+								</div>
+								<div class="card">
+									<table style="empty-cells: show;" width="100%">
+										<tbody><tr>
+											<td colspan="2">
+												<h4 class="name">Ravi Prakash</h4>
+												<h3 class="title">Technical Yahoo. Anonymization EU A29 &amp; Grid Data Management (GDM). Formerly Lotus</h3>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2" height="8"></td>
+										</tr>
+										<tr>
+											<td class="lc" width="76">Work:</td>
+											<td class="rc">
+												<a href="ymsgr:callphone?+12172554422">217-255-4422</a><img src="raviprak_files/icon_telephone.png" alt="Phone Number" title="Phone Number" height="12" width="12" align="absmiddle" border="0">
+												<!-- <a href="<a href='ymsgr:callphone?+12172554422'>217-255-4422</a><img src='img/icon_telephone.png' border='0' width='12' height='12' align='absmiddle' alt='Phone Number' title='Phone Number' />">217-255-4422</a>
+												<img src="img/icon_telephone.png" border="0" width="12" height="12" align="absmiddle" alt="Telephone" title="Telephone" /> -->
+											</td>
+										</tr>
+										<tr>
+											<td class="lc">Mobile:</td>
+											<td class="rc"><a href="ymsgr:callphone?+16504920984">(650) 492 0984</a><img src="raviprak_files/icon_telephone.png" alt="Phone Number" title="Phone Number" height="12" width="12" align="absmiddle" border="0"></td>
+										</tr>
+										<tr>
+											<td class="lc">Home:</td>
+											<td class="rc">NA</td>
+										</tr>
+										<tr>
+											<td class="lc">Pager:</td>
+											<td class="rc">NA</td>
+										</tr>
+										<tr>
+											<td class="lc">Pager email:</td>
+											<td class="rc">NA</td>
+										</tr>
+										<tr>
+											<td class="lc">Y! ID:</td>
+											<td class="rc"><a href="http://pulse.yahoo.com/ravihoo@ymail.com">ravihoo@ymail.com</a>&nbsp;&nbsp;
+<a href="ymsgr:SendIM?ravihoo@ymail.com"><img src="raviprak_files/online_002.gif" height="16" width="64" align="absbottom" border="0"></a>&nbsp;&nbsp;
+<a href="ymsgr:callpc?to=ravihoo@ymail.com"><img src="raviprak_files/online.gif" align="absbottom" border="0"></a>
+											<!-- 	<a href="http://profiles.yahoo.com/cowyoung">cowyoung</a>
+												<a href="ymsgr:SendIM?cowyoung">
+													<img src="img/icon_opi_on.png" border="0" width="12" height="12" align="absmiddle" alt="Yahoo! IM" title="Yahoo! IM" />
+												</a>  -->
+											</td>
+										</tr>
+										<tr>
+											<td class="lc">Email:</td>
+											<td class="rc"><a href="mailto:raviprak@yahoo-inc.com">raviprak@yahoo-inc.com</a>
+<a href="http://backyard.yahoo.com/tools/g/vcard/vcf.php?user_id=raviprak&amp;withPic=1&amp;force21=1">
+<img src="raviprak_files/icon_vcard.png" alt="Download vCard" title="Download vCard" height="16" width="16" align="absmiddle" border="0"></a>
+								
+<!-- 
+												<a href="mailto:cynthiao@yahoo-inc.com">cynthiao@yahoo-inc.com</a>
+												<a href="/tools/g/vcard/vcf.php?user_id=cowyoung&withPic=1&force21=1">
+													<img src="img/icon_vcard.png" border="0" width="16" height="16" align="absmiddle" alt="Download vCard" title="Download vCard" />
+												</a>
+												<a href="javascript: void(0);" onclick="smsBubble();">
+													<img src="img/icon_email.png" border="0" width="12" height="12" align="absmiddle" alt="Send vCard via email" title="Send vCard via email" />
+												</a>
+-->
+											</td>
+										</tr>
+										<tr>
+											<td class="lc">Location:</td>
+											<td class="rc"><a href="http://backyard.yahoo.com/locations/offices/info/US-Champaign.html">US - Champaign</a> - CPN011209</td>
+										</tr>
+										<tr>
+											<td class="lc">Secure ID:</td>
+											<td class="rc">Yes</td>
+										</tr>
+										<tr><td class="lc" colspan="2">Preferred method of contact: Work Phone</td></tr>
+										<tr><td class="lc"></td><td class="rc"></td></tr>
+
+										
+									</tbody></table>
+								</div>
+							</div>
+							<!-- END: profile -->
+							<!-- START: personal -->
+							<div class="personal floatmask">
+								<table style="empty-cells: show;" width="100%">
+									<tbody><tr>
+										<td colspan="2">
+											<h3 class="title">Personal Information</h3>
+										</td>
+									</tr>
+									<tr>
+										<td class="lc" width="115">Mailing Address:</td>
+										<td class="rc">2021 S First St Suite 110, Champaign, IL, 61820, US</td>
+									</tr>
+									<tr>
+										<td class="lc">Mail Stop:</td>
+										<td class="rc">NA</td>
+									</tr>
+									<tr>
+										<td class="lc">Birthday:</td>
+										<td class="rc">NA</td>
+										
+									</tr>
+									<tr>
+										<td class="lc">Legal Name:</td>
+										<td class="rc">Ravi Prakash</td>
+									</tr>
+								</tbody></table>
+							</div>
+							<!-- END: personal -->
+							<!-- START: organizational information -->
+							<div class="personal floatmask">
+								<table style="empty-cells: show;" width="100%">
+									<tbody><tr>
+										<td colspan="2">
+											<h3 class="title">Organizational Information</h3>
+										</td>
+									</tr>
+									<tr>
+										<td class="lc" width="115">Dept/Funct.:</td>
+										<td class="rc">501700 - 100 Pipelines - Engineering Function</td>
+									</tr>
+									<tr>
+										<td class="lc">User ID:</td>
+										<td class="rc">raviprak</td>
+									</tr>
+									<tr>
+										<td class="lc">Reports To:</td>
+										<td class="rc"><a href="http://backyard.yahoo.com/tools/g/employee/profile?user_id=jzheng">Jeanie Z Zheng</a> (
+<a href="http://backyard.yahoo.com/tools/g/employee/yorg?yahooid=jzheng&amp;depth=1&amp;disptitle=on">Y!Org</a> <img src="raviprak_files/icon_orgchart.png" alt="Organization Chart" title="Organization Chart" height="16" width="16" align="absmiddle" border="0">&nbsp;|&nbsp;<a href="mailto:jzheng@yahoo-inc.com">E-mail</a> )</td>
+									</tr>
+									
+									<tr><td class="lc">HR/Stock Number:</td><td class="rc">135972</td></tr>
+									
+									
+									<tr>
+										<td class="lc">Start Date:</td>
+										<td class="rc">Jan 04, 2010</td>
+									</tr>
+									
+								</tbody></table>
+							</div>
+							<!-- END: organizational information -->
+							<!-- START: direct reports -->
+							
+							<!-- END: direct reports -->
+							<!-- START: education -->
+							<div class="education floatmask">
+<table style="empty-cells: show;" width="100%">
+<tbody><tr><td colspan="4"><h3 class="title">Education</h3></td></tr>
+<tr><td colspan="4" height="4"></td></tr>
+<tr>
+<td class="ct" width="30%">Institution</td>
+<td class="ct" width="30%">Major</td>
+<td class="ct" width="30%">Degree</td>
+<td class="ct" width="10%">Period</td>
+</tr>
+                        <tr>
+                                <td class="lc">GGS Indraprastha University</td>
+                                <td class="lc">Computer Science &amp; Engineering</td>
+                                <td class="lc">B.Tech</td>
+                                <td class="lc">May 2003-2007</td>
+                        </tr>
+                        <tr>
+                                <td class="lc">University of Southern California (USC), Los Angeles</td>
+                                <td class="lc">Computer Science</td>
+                                <td class="lc">MS</td>
+                                <td class="lc">2007-2008</td>
+                        </tr></tbody></table></div>
+							<!-- END: education -->
+							<!-- START: experience -->
+							<div class="experience floatmask">
+<table style="empty-cells: show;" width="100%">
+<tbody><tr><td colspan="3"><h3 class="title">Work Experience</h3></td></tr>
+<tr><td colspan="3" height="4"></td></tr>
+<tr>
+<td class="ct" width="30%">Company</td>
+<td class="ct" width="30%">Title</td>
+<td class="ct" width="10%">Period</td>
+</tr>
+                        <tr>
+                                <td class="lc">University of Southern California</td>
+                                <td class="lc">Programmer Analyst</td>
+                                <td class="lc">2008-2009</td>
+                        </tr></tbody></table></div>
+							<!-- END: work_experience-->
+							<!-- START: in my own words -->
+							
+							<!-- END: in my own words -->
+						</div>
+					</div>
+					<div class="yui-u second">
+						<div class="right floatmask">
+							<!-- START: personal options -->
+
+							
+							<!-- END: personal options -->
+							<!-- START: personal finance -->
+							
+							<!-- END: personal finance -->
+							<!-- START: my tags -->
+							<!-- END: my tags -->
+							<!-- START: my bravos -->
+							<div class="bravos floatmask">                                                                
+	<table style="empty-cells: show;" width="100%">
+	<tbody><tr><td><h3 class="title">My Bravos</h3></td></tr>
+	<tr><td height="4"></td></tr>   <tr><td class="lc">These bravos have been given to Ravi Prakash by fellow Yahoos. <a href="http://backyard.yahoo.com/tools/o/bravo/about.php?user_id=raviprak">Learn more</a>  about the Backyard Bravos program or <a href="http://backyard.yahoo.com/tools/o/bravo/give.php?to=raviprak">give one</a> now!</td></tr></tbody></table><div class="icons floatmask"><div id="bravos"><div><a href="http://backyard.yahoo.com/tools/o/bravo/awarditem.php?id=31145"><img src="raviprak_files/64x64_show_the_way.gif" title="&lt;div class='bravoname'&gt;Show the Way&lt;/div&gt;&lt;div class='bravoreason'&gt;Ravi always communicates his ideas clearly and concisely. He is able to organize and explain very complex topics in easy-to-understand terms and is careful to tailor them to his audience. Working with Ravi on the A29 Project always a pleasure.&lt;/div&gt;&lt;div class='bravogiver'&gt;Given by:Antonio Hernandez Aguila&lt;/div&gt;" alt="Show the Way" height="64" width="64" border="0"></a>
+</div></div></div></div><script>
+var bravos = document.getElementById('bravos');
+if(bravos) {
+        var bimgs = bravos.getElementsByTagName('img');
+        for(i=0; i < bimgs.length; ++i)
+        {
+        new YAHOO.widget.Tooltip("bravoimg"+i, { context:bimgs[i], width:'200px',autodismissdelay:30000 });
+        }
+}
+</script>
+							<!-- END: my bravos -->
+						</div>
+					</div>
+				</div>
+				<div style="padding-top: 10px;">
+				<!-- START: footer -->
+<div id="footer-out-wrapper">
+        <div id="footer-wrapper">
+                <div id="footer-content">
+                        <div id="links" class="floatmask">
+                                <div id="company" class="column">
+                                        <a href="http://backyard.yahoo.com/our_company" class="headline">Our Company</a>
+                                        <a href="http://backyard.yahoo.com/our_company/executive_team">Executive Team</a>
+                                        <a href="http://backyard.yahoo.com/tools/g/priorities">Company Priorities</a>
+                                        <!-- <a href="/our_company/financials">Financials</a> -->
+                                        <a href="http://backyard.yahoo.com/our_company/technology_products_properties">Technology,<br>Products &amp; Properties</a>
+					<a href="http://backyard.yahoo.com/our_company/fun_facts">Fun Facts</a>
+                                        <a href="http://companystore.yahoo.com/">Yahoo! Company Store</a>
+                                </div>
+                                <div id="atyahoo" class="column">
+                                        <a href="http://backyard.yahoo.com/work_at_yahoo" class="headline">Working @ Y!</a>
+                                        <a href="http://backyard.yahoo.com/learn/newhires/">Getting Started as a Yahoo</a>
+                                        <a href="http://backyard.yahoo.com/tools/o/sso/benefits.php">U.S. Benefits Center</a>
+                                        <a href="http://managercentral.corp.yahoo.com/maple/index">Manager Central</a>
+                                        <a href="http://backyard.yahoo.com/learn/">Learning &amp; Development</a>
+                                        <a href="http://backyard.yahoo.com/resources/humans/euhr/index.php">EMEA</a>
+                                        <a href="http://backyard.yahoo.com/resources/humans/apac/">APAC</a>
+                                </div>
+                                <div id="community" class="column">
+                                        <a href="http://backyard.yahoo.com/our_community" class="headline">Our Community</a>
+                                        <a href="http://backyard.yahoo.com/yef">Yahoo! Employee Foundation</a>
+                                        <a href="http://forgood.yahoo.com/index.html">Yahoo! For Good</a>
+                                        <a href="http://twiki.corp.yahoo.com/view/YFG/GreenTeam">Yahoo! Green Team</a>
+                                        <a href="http://eventcentral.corp.yahoo.com/">Event Central</a>
+                                </div>
+                                <div id="tools" class="column">
+                                        <a href="http://backyard.yahoo.com/tools_supports" class="headline">Tools and Support</a>
+                                        <a href="http://backyard.yahoo.com/resources/isnet">IT Support</a>
+                                        <a href="http://backyard.yahoo.com/resources/facilities/REW/index.php">Real Estate &amp; Workplace</a>
+                                        <a href="http://backyard.yahoo.com/tools_supports/tools">Tools</a>
+                                        <a href="http://backyard.yahoo.com/tools_supports/forms">Forms</a>
+                                </div>
+                                <div id="departments" class="column">
+                                        <a href="http://backyard.yahoo.com/departments" class="headline">Departments</a>
+                                        <a href="http://backyard.yahoo.com/tools/g/properties/">Directory</a>
+                                </div>
+                                <div id="news" class="column">
+                                        <a href="http://backyard.yahoo.com/tools/g/news/landing.php" class="headline">All News</a>
+                                        <a href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=178">Featured News</a>
+                                        <a href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=181">Product News</a>
+                                        <a href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=205">Regions News</a>
+					<a href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=182">Local News</a>
+                                        <a href="http://backyard.yahoo.com/tools/g/news/landing.php?typeid=227">Awards &amp; Honors</a>
+                                </div>
+                        </div>
+                        <div id="legend">
+                                 <a href="http://backyard.yahoo.com/contact_us/">Contact us</a> &nbsp;|&nbsp; <a href="http://backyard.yahoo.com/submit_story/submit_story.html">Submit a story idea</a> &nbsp;|&nbsp; <a href="http://bug.corp.yahoo.com/enter_bug.cgi?product=backyard%20website&amp;component=redesign2010" target="_blank">File a bug</a><br>
+                                Copyright © 2011 Yahoo! Inc. All rights reserved. <a href="http://twiki.corp.yahoo.com/view/Paranoidpolicy/PolicyInformationClassificationHandlingTable">For internal use only</a>.
+                        </div>
+                </div>
+        </div>
+</div>
+
+<!-- no YWA on dev box -->
+<!-- Yahoo! Web Analytics - All rights reserved --> <script type="text/javascript" src="raviprak_files/ywa.js"> </script> <script type="text/javascript"> var YWATracker = YWA.getTracker("10001965722562"); YWATracker.submit(); </script> <noscript> <div><img src="http://a.analytics.yahoo.com/p.pl?a=10001965722562&amp;js=no" width="1" height="1" alt="" /></div> </noscript>
+<!-- End of Yahoo! Web Analytics Code -->
+<!-- END: footer -->
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+var bravos = document.getElementById('bravos');
+if(bravos) {
+        var bimgs = bravos.getElementsByTagName('img');
+        for(i=0; i < bimgs.length; ++i)
+        {
+        new YAHOO.widget.Tooltip("bravoimg"+i, { context:bimgs[i], width:'200px',autodismissdelay:30000 });
+        }
+}
+</script>
+
+
+
+
+<!-- backyard-app5.corp.sp2.yahoo.com compressed/chunked Mon Jan 24 18:30:46 UTC 2011 -->
+</body></html>
